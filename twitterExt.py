@@ -7,10 +7,10 @@ def twitterext(query):
     rsent=""
     checker=re.compile('https://[0-9a-zA-Z\.\/]{1,}')
     checker2=re.compile('https://[0-9a-zA-Z\.\/]{1,}$')
-    c_key="97RER2b7HZ0bFwDMpz8WDwe5U"
-    cs_key="ClInQ8qE1o7tIrfUeYCZmAYemglRaVWYPfXXZBSXcggT32vS9m"
-    a_token="97RER2b7HZ0bFwDMpz8WDwe5U"
-    as_token="ClInQ8qE1o7tIrfUeYCZmAYemglRaVWYPfXXZBSXcggT32vS9m"
+    c_key="consumer_key"
+    cs_key="consumer secret"
+    a_token="access token"
+    as_token="access secret"
     OAUTH_KEYS = {'consumer_key':c_key, 'consumer_secret':cs_key,'access_token_key':a_token, 'access_token_secret':as_token}
     auth = tweepy.OAuthHandler(OAUTH_KEYS['consumer_key'], OAUTH_KEYS['consumer_secret'])
     api = tweepy.API(auth)
